@@ -1,0 +1,41 @@
+
+main {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 1fr 2fr 0.3fr;
+      grid-template-areas:
+      "header header header header"
+      "aside section section section"
+      "aside section section section"
+      "footer footer footer footer";
+      column-gap: 2%;
+      row-gap: 2%;
+      background-color: pink;
+      padding: 3%;
+      width: auto;
+}
+
+header {
+      grid-area:header;
+}
+aside {
+      grid-area:aside;
+}
+section {
+      grid-area: section;
+}
+footer {
+      grid-area: footer;
+}
+.grid-item {
+      background-color: rgb(13, 202, 193);
+      border: 10px dotted rgb(48, 45, 223);
+      border-radius: 3%;
+      padding: 3%;
+      font-size: 150%;
+
+}
+.responsive-img {
+      max-width: 100%;
+      max-height: 100%;
+}

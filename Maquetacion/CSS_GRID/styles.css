@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-areas: 
+      "header header header header"
+      "biography biography picture picture"
+      "art art art description"
+      "data data data year"
+      "contact list list year"
+      "contact location location year"
+      "footer footer footer footer";
+      column-gap: 15px;
+      row-gap: 10px;
+      background-color: #07c2a3;
+      padding: 10px;
+      width: auto;
+      
+    }
+    
+.grid-item {
+      background-color: rgba(247, 130, 237, 0.8);
+      border: 1px solid rgba(193, 233, 118, 0.8);
+      border-radius: 5%;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      
+    }
+
+#navBar {
+  grid-area: header;
+}
+
+.biography {
+  grid-area: biography;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.footer {
+  grid-area: footer;
+}
+.data {
+  grid-area: data;
+}
+.year {
+  grid-area: year;
+}
+.contact {
+  grid-area: contact;
+}
+
+.location {
+  grid-area: location;
+}
+.art {
+  grid-area: art;
+}
+.description {
+  grid-area: description;
+}
+.list {
+  grid-area: list;
+}
+    h1 {
+      font-family: 'Pacifico', cursive;
+    }
