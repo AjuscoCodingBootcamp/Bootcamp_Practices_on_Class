@@ -2,7 +2,7 @@
 
 //Promises are statements that should complete to pass to the next step
 let suRespuesta;
-
+//promise with 2 states handlers; resolve & reject
 let promesa = new Promise( (resolve, reject) => {
       let a = 1 + 1
       let leGusto = true;
@@ -47,7 +47,7 @@ promesa.then((respuesta) => {
 let keepsHisWord;
 keepsHisWord = true;
 
-promise1 = new Promise((resolve, reject) => {
+let promise1 = new Promise((resolve, reject) => {
   if (keepsHisWord) {
     resolve("The man likes to keep his word");
   } else {
